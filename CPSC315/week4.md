@@ -48,3 +48,13 @@ When is a system an infrastructure?
     When it is used by many people
     When it is used for many purposes
     When it is used for a long time
+
+Actor Network Theory - a theory that sees the world as a network of human and non-human actors
+    Actors are entities that do things
+    Networks are the relationships between actors
+    Actors and networks are inseparable
+    Treats all actors as equal
+
+Anthropomorphism - treating non-humans like humans
+
+Technomorphism - treating humans like non-humans
