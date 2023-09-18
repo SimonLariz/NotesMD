@@ -36,3 +36,16 @@ Terms of Service, Privacy Policies
 # Is Privacy Equal? Should it be?
 
 Are there classes of people who have more privacy than others?
+
+
+# Is privacy a useful concept?
+ 
+Is privacy just a (bad) word for a set of other concepts? (liberty, autonomy, security, etc.)
+
+Ethics and Ethical concerns evolve as your technology evolves
+
+We have a right to have our privacy concerns met
+
+Privacy: A complicated legal, social, and technological construct
+
+Contextual Integrity - a theory of privacy that focuses on the appropriateness of information flows
