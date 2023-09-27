@@ -49,3 +49,23 @@ We have a right to have our privacy concerns met
 Privacy: A complicated legal, social, and technological construct
 
 Contextual Integrity - a theory of privacy that focuses on the appropriateness of information flows
+
+# Surveillance and Technology
+Surveillance is the monitoring of behavior, activities, or information for the purpose of influencing, managing, directing, or protecting people. (FROM ABOVE)
+
+The Panopticon - Circular prison with a central guard tower, unseen by prisoners, who are never sure if they are being watched
+(Good way to instill governmentally - the art of governing)
+
+Idea of pamopticon is everywhere - we are always being watched
+
+Modern day survaillance is cheap and it is big business
+Cheaper to record, analyze, and store data than ever before
+
+Biometrics - the measurement and analysis of unique physical or behavioral characteristics (fingerprints, facial recognition, iris scans, etc.)
+Difficult to change biometrics - once compromised, you can't change it
+
+Algorithmic Surveillance - the use of computer algorithms to monitor behavior, activities, or information for the purpose of influencing, managing, directing, or protecting people
+
+We use these algorithms without knowing how they work
+
+Predictive Policing - the use of mathematical, predictive analytics, and other analytical techniques in law enforcement to identify potential criminal activity
