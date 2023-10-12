@@ -42,5 +42,4 @@ ip address 192.168.1.1 255.255.255.252
 ip ospf 1 area 0
 no shutdown
 exit
-
 ```
