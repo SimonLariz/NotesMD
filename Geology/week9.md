@@ -22,3 +22,7 @@ The boring billion - no major changes in life
 No major climate or tectonic changes
 
 # NeoProterozoic Life (1.0 - 0.54 BYA)
+Two more supercontinents - Rodinia and Pannotia
+CryoGenian Period (850 - 635 MYA) - Slushball Earth
+
+Ediacaran Period (635 - 542 MYA) - Last period of the Proterozoic, The first animals appear
