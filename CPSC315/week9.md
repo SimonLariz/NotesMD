@@ -12,3 +12,21 @@ Lawrence Lessig: Free Culture
 
 Free if you dont charge for it 
 
+Midterm 
+- Infrastructre
+- Sousveillance
+- Contextual Integrity
+- Hacktivism
+- Actor Network Theory
+- The Panopticon
+- Operation Olympic Games
+- Ransomware
+- Social Capital
+- Context Collapse
+- Dunbar's Number
+- Botnet
+- Predictive Policing
+- The Monographic Principle
+- Phreaking
+- 5th Dimensional Attacks
+
