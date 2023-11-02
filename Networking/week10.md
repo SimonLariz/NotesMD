@@ -27,3 +27,19 @@ Virtual Firewall - A firewall that is implemented in software. It can be used to
 Hardware Firewall - A firewall that is implemented in hardware. It can be used to block packets that are not part of an established connection.
 
 Demilitarized Zone (DMZ) - A network that is between the Internet and a private network. It can be used to block packets that are not part of an established connection.
+
+Distributed Firewall - A firewall that is implemented on multiple hosts. It can be used to block packets that are not part of an established connection.
+
+Virtual Private Network (VPN) - Connects computers and LANs securely over an unsecure network using encryption and protocols
+
+IPSec - A protocol that provides security for IP packets. It can be used to block packets that are not part of an established connection.
+
+IPSec Provides 
+- Data integrity
+- Origin authentication (IP spoofing prevention)
+- Replay protection (prevents replay attacks, attacker intercepts and resends packets)
+- Confidentiality (encryption)
+
+Consist of two protocols
+- Authentication Header (AH) - provides data integrity, origin authentication, and replay protection NO CONFIDENTIALITY (data is NOT encrypted )
+- Encapsulating Security Payload (ESP) - provides data integrity, origin authentication, replay protection, AND CONFIDENTIALITY ( data IS encrypted )
