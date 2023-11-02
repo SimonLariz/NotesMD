@@ -17,6 +17,13 @@ Stateful firewall - A firewall that keeps track of the state of a connection. It
 
 Application-Level Gateway - A firewall that acts as a proxy for a specific application. It can be used to block packets that do not conform to the application protocol.
 
+Circuit Level Gateway - A firewall that acts as a proxy for a TCP connection. It can be used to block packets that do not conform to the TCP protocol.
+    - SOCKS - A protocol that allows a client to connect to a server through a firewall.
+
+Host Based Firewall - A firewall that is implemented on a host. It can be used to block packets that are not part of an established connection.
+
 Virtual Firewall - A firewall that is implemented in software. It can be used to block packets that are not part of an established connection.
 
 Hardware Firewall - A firewall that is implemented in hardware. It can be used to block packets that are not part of an established connection.
+
+Demilitarized Zone (DMZ) - A network that is between the Internet and a private network. It can be used to block packets that are not part of an established connection.
