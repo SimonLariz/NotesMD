@@ -37,3 +37,35 @@ Digital signature - a cryptographic technique that is used to verify the authent
 
 # Certificate Authorities
 Certificate authority - an entity that issues digital certificates. A digital certificate is a digital document that is used to verify the identity of a person, organization, or website.
+
+# User authentication
+User authentication - the process of verifying the identity of a user. User authentication is used to control access to a system or application, and to protect sensitive information from unauthorized access.
+
+# Four factors of authentication:
+* Something you know (e.g., password)
+* Something you have (e.g., smart card)
+* Something you are (e.g., fingerprint)
+* Something you do (e.g., typing pattern)
+
+# Multi-factor authentication
+Multi-factor authentication - a security process that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction.
+
+# Assurance Level
+Assurance level - a measure of the confidence that can be placed in the security of a system or application. The assurance level is based on the strength of the security controls that are in place, and the level of confidence that can be placed in the security of the system or application.
+
+* Level 1: No confidence
+* Level 2: Some confidence
+* Level 3: High confidence
+* Level 4: Very high confidence
+
+Potential Impact - the potential impact of a security breach on the confidentiality, integrity, and availability of information.
+
+* Low - an authentication error could be expected to have a limited adverse effect on an organization's operations, assets, or individuals.
+* Moderate - an authentication error could be expected to have a serious adverse effect on an organization's operations, assets, or individuals.
+* High - an authentication error could be expected to have a severe or catastrophic adverse effect on an organization's operations, assets, or individuals.
+
+# Password-based Authentication
+Password-based authentication - a method of user authentication that requires the user to enter a password. The password is used to verify the identity of the user, and to control access to a system or application.
+
+Widely used because it is easy to implement and use, and it is cost-effective.
+
