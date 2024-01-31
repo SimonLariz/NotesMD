@@ -75,7 +75,9 @@ Full-duplex - both directions at the same time
 # Network Core
 Network Core - mesh of interconnected routers
 
-Packet Switching - host breaks application layer messages into packets, packets are transmitted to the network core, packets are routed to the destination, packets are reassembled into the application layer message..
+Packet Switching - host breaks application layer messages into packets, packets are transmitted to the network core, packets are routed to the destination, packets are reassembled into the application layer message.
+
+Circuit Switching - end-to-end resources are reserved for the duration of the communication, EX: telephone network, not efficient for data communication
 
 # Packet Switching: store and forward
 Store and Forward - the entire packet must arrive at the router before it can be transmitted to the next router
@@ -84,3 +86,18 @@ Transmission Delay - the time it takes to push the packet into the link
 
 # Packet Switching: Queuing Delay
 Packet queuing and loss - if arrival rate (in bps) to link exceeds transmission rate, packets will queue, if the queue is full, packets will be dropped
+
+# Circuit Switching: FDM and TDM
+Frequency Division Multiplexing (FDM) - divide the frequency spectrum into channels, allocate each channel to a connection, inefficient
+
+Time Division Multiplexing (TDM) - divide the time into frames, allocate each frame to a connection, efficient
+
+# Packet Switching vs. Circuit Switching
+Packet Switching allows for multiple connections to share the network core, but it has variable delay and packet loss
+
+Circuit Switching has a fixed delay and no packet loss, but it is inefficient
+
+# Network Core Functions
+Forwarding - local action, move packets from router input to router output
+
+Routing - global action, determine the route that packets will take
