@@ -64,3 +64,13 @@ Object Cache - used by both front-end application servers and web services to re
 
 # Message Queue 
 Message Queue - used to postpone some of the processing to a later stage and to delegate work to queue workers
+
+# Application Architecture Types
+Service Oriented Architecture (SOA) - an architectural pattern in computer software design in which application components provide services to other components via a communications protocol, typically over a network
+
+# Hexagonal Architecture
+Hexagonal Architecture - an architectural pattern used to build applications around a core business logic, which is isolated from the external environment by adapters
+
+# Event Driven Architecture
+Event Driven Architecture (EDA) - a software architecture paradigm promoting the production, detection, consumption of, and reaction to events, Does not need to wait for a response from the server, and can continue to work with the user
+
