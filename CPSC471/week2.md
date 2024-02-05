@@ -101,3 +101,36 @@ Circuit Switching has a fixed delay and no packet loss, but it is inefficient
 Forwarding - local action, move packets from router input to router output
 
 Routing - global action, determine the route that packets will take
+
+# Google Network
+Allows google to run at a large scale, uses a distributed system, uses a distributed file system, uses a distributed database, uses a distributed computing system
+
+Google does not need to share bandwidth with other companies, so it can use a private network
+
+# Packet Delay and Packet Loss
+Packet Delay - the time it takes for a packet to travel from the source to the destination
+
+Packet Loss - the loss of a packet during transmission
+
+Packets queue in router buffers
+* packets queue, wait for turn
+* arrival rate to link exceeds transmission rate of link (packet loss)
+
+Packet Delay = Transmission Delay + Propagation Delay + Queuing Delay + Processing Delay
+
+Processing Delay - check bit errors, determine output link
+Queuing Delay - time waiting at output link for transmission, depends on congestion level of router
+Transmission Delay - time to push the packet into the link
+Propagation Delay - time for the packet to travel from the source to the destination
+
+# Throughput
+Throughput - the rate at which bits are transferred between sender and receiver
+* Instantaneous Throughput - the rate at a given point in time
+* Average Throughput - the average rate over a period of time
+
+# Internet Protocol Stack
+Application Layer - supports network applications, EX: HTTP, SMTP, FTP, etc.
+Transport Layer - process-to-process data transfer, EX: TCP, UDP
+Network Layer - routing of datagrams from source to destination, EX: IP, routing protocols
+Link Layer - data transfer between neighboring network elements, EX: Ethernet, WiFi
+Physical Layer - bits "on the wire"
