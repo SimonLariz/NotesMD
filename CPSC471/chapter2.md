@@ -83,3 +83,25 @@ Identifier includes both IP address and port number
 - Data integrity
 * Some apps require 100% reliable data transfer (e.g. file transfer)
 * Other apps can tolerate some loss (e.g. audio)
+
+- Timing
+* Some apps require low delay to be effective (e.g. internet telephony, games)
+
+- Throughput
+* Some apps require minimum amount of throughput to be effective (e.g. multimedia) 
+* other apps make use of whatever throughput they get (e.g. email)
+
+- Security
+* Encryption, data integrity, etc.
+
+# Transport Protocol Services
+- TCP service
+* Reliable transport between sending and receiving process
+* Flow control - sender won't overwhelm receiver
+* Congestion control - throttle sender when network overloaded
+* Does not provide timing, minimum throughput guarantee, or security
+* Connection-oriented - setup required between client and server processes
+
+- UDP service
+* Unreliable data transfer between sending and receiving process
+* Does not provide flow control, congestion control, timing, throughput guarantee, or security
