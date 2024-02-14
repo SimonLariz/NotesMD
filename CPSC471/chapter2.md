@@ -191,3 +191,12 @@ Example:
 - Susan's browser stores cookie
 - When Susan returns to Amazon, browser sends cookie to Amazon
 - Amazon uses cookie to look up Susan's user information
+
+# Web Caches (Proxy Servers)
+Goal: satisfy client request without involving origin server
+- User configures browser to use web cache
+- Browser sends all HTTP requests to web cache
+- If object is in cache, web cache returns object
+- If object is not in cache, web cache requests object from origin server, then returns object to client
+
+Web Cache acts as both client and server
