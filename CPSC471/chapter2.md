@@ -105,3 +105,89 @@ Identifier includes both IP address and port number
 - UDP service
 * Unreliable data transfer between sending and receiving process
 * Does not provide flow control, congestion control, timing, throughput guarantee, or security
+
+# Web and HTTP
+- Web page consists of objects, each of which can be stored on different servers
+- Objects can be HTML file, JPEG image, Java applet, audio clip, etc.
+- Web page consist of base HTML file which includes several referenced objects
+
+# HTTP connections 
+- Persistent HTTP
+* TCP connection is opened
+* Multiple objects can be sent over single TCP connection between client and server
+* TCP connection closed after all objects have been sent
+
+- Non-persistent HTTP
+* TCP connection opened
+* One object sent over TCP connection
+* TCP connection closed
+
+# Non-Persistent HTTP
+- Non-persistent HTTP requires 2 RTTs per object
+- OS overhead for each TCP connection
+- Browser opens multiple parallel TCP connections to fetch objects
+
+# Persistent HTTP
+- Persistent HTTP requires 1 RTT for all referenced objects
+- OS overhead for each TCP connection
+
+# HTTP Request Message
+- GET
+* Requests an object from server
+* GET /somedir/page.html HTTP/1.1
+* Host: www.someschool.edu
+* User-agent: Mozilla/4.0
+
+General format:
+- Method, URL, version [REQUEST LINE]
+- Headers [HEADER LINES]
+- Blank line [CR LF]
+- Optional message body [BODY]
+
+#  Other HTTP Request Methods
+- POST
+* Submits data to be processed to server
+
+- HEAD
+* Asks server to leave requested object out of response
+
+- PUT
+* Uploads object to server
+
+- DELETE
+* Deletes object on server
+
+# HTTP Status Codes
+- 200 OK
+* Request succeeded, requested object later in this message
+
+- 301 Moved Permanently
+* Requested object moved, new location specified later in this message
+
+- 400 Bad Request
+* Request message not understood by server
+
+- 404 Not Found
+* Requested document not found on this server
+
+- 505 HTTP Version Not Supported
+* HTTP protocol version not supported by server
+
+# Maintaining user/server state: Cookies
+- Cookies
+* Server sends cookies to client, stored at client
+* Cookies are included in subsequent HTTP requests from client to server
+* Cookies can be used to implement user-authentication, shopping carts, recommendations, etc.
+
+- Four Components of Cookies
+* Cookie header line of HTTP response message
+* Cookie header line in next HTTP request message
+* Cookie file kept on user's host, managed by user's browser
+* Back-end database at website
+
+Example: 
+- Susan uses browser to access Amazon
+- Amazon server creates unique ID and sends it to Susan's browser (cookie)
+- Susan's browser stores cookie
+- When Susan returns to Amazon, browser sends cookie to Amazon
+- Amazon uses cookie to look up Susan's user information
