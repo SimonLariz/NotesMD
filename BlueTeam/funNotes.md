@@ -38,4 +38,3 @@ nmap -sV --script=vulners.nse <target>
 ```bash
 nikto -h <target>
 ```
-
