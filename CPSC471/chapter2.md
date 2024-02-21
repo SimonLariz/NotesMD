@@ -223,3 +223,36 @@ Web Cache benefits:
 - Goal: decreased delay in multi-object HTTP requests
 
 HTTP3 adds security, per object error- and congestion- control over UDP
+
+## Email
+Three major components:
+- User agents
+- Mail servers
+- Simple Mail Transfer Protocol (SMTP)
+
+User Agent
+- "Mail reader"
+- Composing, editing, reading, and sending mail messages
+- E.g. Outlook, Thunderbird, Apple Mail
+- Outgoing, incoming messages stored on server
+
+# Email Mail Servers
+Mailbox - contains incoming messages for user
+Messaging Queue - holds outgoing messages
+SMTP protocol between mail servers to send email messages
+
+# Mail Message Format
+SMTP - Protocol for exchanging email between mail servers
+
+- Header lines
+* To: recipient
+* From: sender
+* Subject: what the message is about
+* Body
+
+# Mail Access Protocols
+- Post Office Protocol (POP) (downloads messages to client)
+- Internet Message Access Protocol (IMAP) (stores messages on server)
+- HTTP (web-based email)
+
+# DNS - Domain Name System
