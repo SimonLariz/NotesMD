@@ -1,3 +1,64 @@
+## OS Updating and patching
+
+## Machines 
+
+## View linux user accounts
+```bash
+cat /etc/passwd | grep /bin/bash | cut -d: -f1
+
+
+
+```bash
+# Orzo (Arch)
+Cheesed2MeetU!
+
+10.100.120.30
+
+updating
+
+# Bucatini (Fedora)
+10.100.120.121 (DONE)
+
+# Ravoli (Linux)
+10.100.120.43
+10.100.120.45
+
+# Where are ssh keys stored
+/home/username/.ssh
+```
+
+### Deb / Ubuntu
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+### Fedora / CentOS
+
+```bash
+sudo dnf update -y
+```
+
+### Arch 
+```bash
+sudo pacman -Syu
+```
+
+### Slackware
+```bash
+sudo slapt-get --update && sudo slapt-get --upgrade
+```
+
+
+### BSD 
+```bash
+sudo pkg update && sudo pkg upgrade -y
+```
+
+ensl160
+
+
+
+
 ## Snort logging
 
 # Deb / Ubuntu

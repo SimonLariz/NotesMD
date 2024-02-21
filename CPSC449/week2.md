@@ -25,3 +25,6 @@ Inversion of control (IoC) is a programming principle. It is used to decouple cl
 # Data Partitioning
 Data partitioning is the process of dividing a large database into smaller, more manageable parts. By breaking the database into smaller pieces, it is easier to manage and maintain. Data partitioning is also known as database partitioning.
 
+
+Which language does SOAP primarily use for message formatting?
+- 

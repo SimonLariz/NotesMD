@@ -57,7 +57,7 @@ Success Codes:
 # REST APTI
 API - Application Programming Interface, is a set of rules and protocols that allows one software application to communicate with another. 
 
-REST - Representational State Transfer, is an architectural style for distributed hypermedia systems. It is a set of constraints that allows the communication between systems.
+REST - Representational State Transfer, is an architectural style for distributed hypermedia systems. It is a set of constraints that allows the communication between systems. Best for c
 
 Open API - Open Application Programming Interface, is an API that is publicly available for use by developers and other users. It is an API that is available to the public.
 
@@ -79,3 +79,39 @@ Cross-Origin Resource Sharing is a mechanism that allows the web pages to make r
 - RPC
 - GraphQL
 
+
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/users')
+def hello_world():
+      list = ['John','Ben','Kenny']
+      return list
+
+if __name__=='__main__':
+      app.run(debug=True)
+
+Consider the above code running on http://127.0.0.1:5000, what is the expected output if we make request to http://127.0.0.1:5000/users?
+Group of answer choices
+
+[ "John", "Ben", "Kenny" ]
+
+"John Ben Kenny"
+
+"John", "Ben", "Kenny"
+
+John Ben Kenny
+
+Which of the following is NOT a reason for using CORS (Cross-Origin Resource Sharing)?
+
+Group of answer choices
+
+Allowing servers to control access to their resources
+
+Enabling sharing of resources across different origins
+
+Enhancing website performance
+
+ANS: Enhancing website performance

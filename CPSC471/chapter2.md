@@ -199,4 +199,27 @@ Goal: satisfy client request without involving origin server
 - If object is in cache, web cache returns object
 - If object is not in cache, web cache requests object from origin server, then returns object to client
 
-Web Cache acts as both client and server
+Web Cache acts as both client and server, Cache typically installed by ISP, university, company
+
+Web Cache benefits:
+- Reduced response time for client request
+- Reduced traffic on an institution's access link to the internet
+
+# Conditional GET
+- Goal: don't send object if client has up-to-date cached version
+- Cache: specify date of cached copy in HTTP request
+- Server: response contains no object if cached copy is up-to-date
+
+# HTTP/2 
+- Goal: reduce latency, improve network and server resource usage
+- Increased flexibility at server in sending objects
+- Transmission order of requested objects based on client-specific priority
+- Divide objects into frames, schedule frames to mitigate head-of-line blocking
+
+* HTTP 1.1, server responds in order of request (first come, first served)
+* Head of line blocking - slow response to one request slows all other requests
+
+## HTTP 3
+- Goal: decreased delay in multi-object HTTP requests
+
+HTTP3 adds security, per object error- and congestion- control over UDP
