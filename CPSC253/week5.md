@@ -130,3 +130,51 @@ Fourth generation: Full-featured protection
 # Perimeter Scanning Approaches
 Ingress Monitoring: Scans incoming traffic.
 Egress Monitoring: Scans outgoing traffic.
+
+# Intrusion Detection Systems
+- Intrusion detection systems (IDS) are devices or software applications that monitor network or system activities for malicious activities or policy violations and produce reports to a management station.
+
+# Signature-Based IDS
+- Signature-based IDS is a type of IDS that uses signatures to detect malicious traffic.
+
+# Anomaly-Based IDS
+- Anomaly-based IDS is a type of IDS that uses a baseline of normal traffic to detect malicious traffic.
+
+# Network-Based IDS
+- Network-based IDS is a type of IDS that monitors network traffic for signs of attacks.
+
+# Network Based IDS Sensors
+- Network-based IDS sensors are devices that monitor network traffic for signs of attacks.
+Active Sensor: Can block traffic.
+Passive Sensor: Can only monitor traffic.
+
+# Host-Based IDS
+- Host-based IDS is a type of IDS that monitors the characteristics of a single host for signs of attacks.
+
+# Distributed IDS
+- Distributed IDS is a type of IDS that monitors multiple hosts for signs of attacks.
+
+# Stateful Protocol Analysis
+- Subset of anomaly detection that compares observed traffic against predetermined universal vendors supplied profiles of benign traffic.
+- Distinguishes between normal and abnormal traffic.
+
+# Intrusion Prevention Systems
+- Intrusion prevention systems (IPS) are network security appliances that monitor network and/or system activities for malicious activity.
+
+# IETF Intrusion Detection Working Group
+- The IETF Intrusion Detection Working Group (IDWG) is a working group of the Internet Engineering Task Force (IETF) that is responsible for developing standards for intrusion detection systems (IDS).
+- Define data formats and exchange protocols for intrusion detection systems.z
+
+# Intrusion Detection Message Exchange
+- The Intrusion Detetion Message Exchange Format (IDMEF) is a standard format for exchanging information between intrusion detection systems (IDS).
+
+# Honeypots
+- A honeypot is a computer security mechanism set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems.
+- Lure attackers away from critical systems, collect information about the attacker, and provide a means to study the attacker's behavior.
+- Resources have no production value, so any activity is suspicious.
+
+# Honeynet
+- A honeynet is a network set up with the intention of luring attackers, so that they can be studied.
+
+# Snort 
+- Snort is a free and open source network intrusion prevention system (NIPS) and network intrusion detection system (NIDS) created by Martin Roesch in 1998.
