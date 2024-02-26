@@ -256,3 +256,84 @@ SMTP - Protocol for exchanging email between mail servers
 - HTTP (web-based email)
 
 # DNS - Domain Name System
+DNS is a distributed database implemented in hierarchy of many name servers, organized in zones, each responsible for a specific domain
+- Application-layer protocol: hosts, name servers communicate to resolve names (address/name translation)
+
+Example: 
+![DNS Example](./img/chapter2/dns.gif)
+
+# Top level domain (TLD) servers
+- Responsible for com, org, net, edu, etc, and all top-level country domains (e.g. uk, fr, ca, jp)
+
+# Authoritative DNS servers
+- Organization's own DNS server, providing authoritative hostname to IP mappings for organization's named hosts
+
+# Iterative query 
+- Contacted server replies with name of server to contact
+- "I don't know this name, but ask this server"
+
+# Recursive query
+- Puts burden of name resolution on contacted name server
+
+# Caching, Updating Records
+- Once (any) name server learns mapping, it caches mapping
+- Cache entries timeout (disappear) after some time (TTL)
+- TLD servers typically cached in local name servers
+
+# DNS Records
+- Type=A
+    - Name is hostname
+    - Value is IP address
+
+- Type=NS
+    - Name is domain (e.g. foo.com)
+    - Value is hostname of authoritative name server for this domain
+
+- Type=MX
+    - Value is name of mail server associated with name
+    
+- Type=CNAME
+    - Name is alias name for some "canonical" (the real) name
+    - Value is canonical name
+
+# DNS protocol messages
+- Query and reply messages, both with same message format
+- Message header
+    - Identification
+    - Flags
+    - Number of entries in question, answer, authority, and additional sections
+
+# Peer to Peer Applications
+- No always-on server
+- Arbitrary end systems directly communicate
+- Peers are intermittently connected and change IP addresses
+- Self scalability, no need for data centers
+
+# Video Streaming and CDNs
+- Stream video traffic: major consumer of internet bandwidth
+- Challenge: scale up to millions of simultaneous users
+- Challenge: heterogeneity (different users have different capabilities)
+- Solution: Content Distribution Networks (CDNs)
+
+Constant bit rate (CBR) - video encoded at fixed rate
+Fixed bit rate (VBR) - video encoded at variable rate
+
+Network delays are variable, so VBR is more challenging to deliver 
+
+# Streaming multimedia: DASH
+DASH - Dynamic Adaptive Streaming over HTTP
+Server:
+- Encodes video at multiple bit rates
+- Stores multiple copies of video
+- Each video segment is stored in multiple versions
+- Each version is divided into segments
+Client:
+- Requests video segments from server
+- Requests segments at different bit rates
+- Monitors buffer fullness, network congestion
+- Switches to different bit rate if necessary
+
+Streaming Video = encoding + DASH + playout buffering 
+
+# Content Distribution Networks
+CDN - Content Distribution Network, a collection of web servers distributed across multiple locations to deliver content more efficiently to users
