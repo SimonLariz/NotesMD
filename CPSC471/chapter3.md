@@ -51,3 +51,18 @@
 - TCP: demultiplexing based on all four header fields. (source IP, source port, destination IP, destination port)
 - Multiplexing/demultiplexing: on all layers.
 
+## Principles of reliable data transfer
+- Reliable data transfer: important in many applications.
+- Reliable data transfer: sender, receiver agree on sequence of data.
+- Receiver: sends ACK when it receives data.
+- Sender: retransmits data if it does not receive ACK.
+
+## Reliable data transfer protocol (rdt)
+RDT - reliable data transfer protocol, implemented in the transport layer.
+- RDT1.0: no data loss, no bit errors.
+- RDT2.0: channel with bit errors.
+    - Underlying channel may flip bits in packet.
+    - How to recover from errors?
+        - Acknowledgements, receiver explicitly tells sender that packet was received correctly.
+        - Retransmissions, sender retransmits packet if it does not receive an ACK.
+- RDT2.1: channel with bit errors, no loss of data.
