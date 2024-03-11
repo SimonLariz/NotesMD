@@ -65,4 +65,33 @@ RDT - reliable data transfer protocol, implemented in the transport layer.
     - How to recover from errors?
         - Acknowledgements, receiver explicitly tells sender that packet was received correctly.
         - Retransmissions, sender retransmits packet if it does not receive an ACK.
+    - Fatal Flaw: what if ACK/NAK corrupted?
 - RDT2.1: channel with bit errors, no loss of data.
+- RDT 3.0: channel with errors and loss
+    - New channel assumption: underlying channel can lose packets.
+        - checksum, sequence numbers, retransmissions will be of help but not enough.
+    - Approach: sender waits a reasonable amount of time for an ACK.
+        - If ACK not received, sender retransmits packet.
+        - If packet is lost, sender will receive no ACK.
+    - Pipelined protocols: sender can have up to N unacked packets in pipeline.
+
+## Go-Back-N (GBN)
+- Sender can send up to N frames without needing an ACK.
+- Receiver only sends cumulative ACK.
+- Sender has a timer for the oldest unacked packet.
+- If timer expires, sender retransmits all unacked packets.
+
+## Selective Repeat (SR)
+- Receiver individually acknowledges all correctly received packets.
+    - Buffers packets, as needed, for eventual in-order delivery to upper layer.
+- Sender times out on individual packets for unacked packets.
+
+## TCP: Overview
+- Point-to-point: one sender, one receiver.
+- Reliable, in-order byte stream: no message boundaries.
+- Full duplex data: bi-directional data flow in same connection.
+- Cumulative ACKs: receiver sends ACK for all bytes received.
+- Pipelined: sender can send multiple packets before receiving ACK.
+- Connection Oriented: handshaking (exchange of control messages) initializes sender, receiver state before data exchange.
+- Flow control: sender will not overwhelm receiver.
+
