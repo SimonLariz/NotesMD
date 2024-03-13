@@ -126,5 +126,18 @@ RDT - reliable data transfer protocol, implemented in the transport layer.
 
 ## Principles of congestion control
 - Congestion: too many sources sending too much data too fast for network to handle.
+- Throughput can never exceed capacity.
+- Delay increases as capacity is approached.
+- Loss and transmission delay increase as capacity is exceeded.
+- Upstream transmission is wasted if capacity is exceeded.
 
-    
+## Approaches to congestion control
+- End-to-end congestion control: no explicit feedback from network.
+    - Congestion inferred from loss, delay.
+    - Approach taken by TCP.
+
+## TCP Congestion Control: AIMD
+- Approach: Additive Increase, Multiplicative Decrease.
+- Additive Increase: increase window size by 1 maximum segment size (MSS) every round trip time (RTT) until loss detected.
+- Multiplicative Decrease: cut window size in half after loss.
+- AMID has been proven to be fair and efficient.
