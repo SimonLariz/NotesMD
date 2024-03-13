@@ -94,4 +94,37 @@ RDT - reliable data transfer protocol, implemented in the transport layer.
 - Pipelined: sender can send multiple packets before receiving ACK.
 - Connection Oriented: handshaking (exchange of control messages) initializes sender, receiver state before data exchange.
 - Flow control: sender will not overwhelm receiver.
+- Receiver will handle out-of-order packets (Protocol does not describe how to handle out-of-order packets)
 
+## TCP Segment Structure
+- Source port, destination port: 16 bits each.
+- Sequence number: 32 bits. (Counting bytes of data into the byte stream)
+- Acknowledgement number: 32 bits. (Next byte expected by receiver)
+- Header length: 4 bits. (Number of 32-bit words in header)
+- Checksum: 16 bits. (Sum of header and data)
+- TCP Options: variable length.
+- Application data: variable length.
+
+## TCP Sender (Simplified)
+- Event: data received from application layer.
+    - Create segment with sequence number.
+    - Seq # is byte-stream number of first data byte in segment.
+    - Start timer if not already running.
+
+## TCP Flow Control
+- Receiver controls sender, so sender does not overflow receiver's buffer by transmitting too much, too fast.
+- TCP receiver advertises free buffer space by including rwnd value in TCP header of receiver-to-sender segments.
+
+## TCP Connection Management
+- Before exchanging data, sender, receiver establish a connection.
+- Handshaking (exchange of control messages) initializes sender, receiver state before data exchange.
+    - Agree on connection parameters.
+
+## Closing TCP Connection
+- Connection termination: each side closes its side of the connection.
+- Send TCP segment with FIN bit = 1.
+
+## Principles of congestion control
+- Congestion: too many sources sending too much data too fast for network to handle.
+
+    
