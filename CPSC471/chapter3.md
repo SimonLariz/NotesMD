@@ -141,3 +141,27 @@ RDT - reliable data transfer protocol, implemented in the transport layer.
 - Additive Increase: increase window size by 1 maximum segment size (MSS) every round trip time (RTT) until loss detected.
 - Multiplicative Decrease: cut window size in half after loss.
 - AMID has been proven to be fair and efficient.
+
+## TCP CUBIC
+- CUBIC is a modern TCP congestion control algorithm.
+- CUBIC is designed to be more aggressive in using available bandwidth.
+- CUBIC is designed to be more conservative in reducing congestion window when congestion is detected.
+
+## Explicit Congestion Notification (ECN)
+- ECN is an extension to the IP protocol.
+- ECN allows end-to-end notification of network congestion without dropping packets.
+- ECN is used by TCP to reduce congestion.
+
+## QUIC: Quick UDP Internet Connections
+- QUIC is a new transport layer protocol.
+- QUIC is designed to provide security protection equivalent to TLS/SSL.
+- QUIC is designed to reduce latency compared to TCP.
+
+## Chapter Summary
+- Principles behind transport layer services:
+    - Multiplexing/demultiplexing
+    - Reliable data transfer
+    - Flow control
+    - Congestion control
+- Installation, implementation of the internet
+- Transport layer protocols: UDP, TCP
