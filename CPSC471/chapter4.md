@@ -53,3 +53,10 @@ SDN (Software Defined Networking):
   - Send certain packets to particular link.
   - Drop packets.
   - Send packets to specific controller.
+
+## Middleboxes
+- Middlebox is any intermediary device performing functions beyond simple forwarding.
+- Ex: firewalls, NAT boxes, intrusion detection systems, WAN optimizers.
+
+## End-to-End Argument
+- Functionality should be placed in network core only if it cannot be implemented at edge.
