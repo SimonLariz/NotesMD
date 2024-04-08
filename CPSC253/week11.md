@@ -47,3 +47,21 @@
 - Two general configurations:
     - Agentless SIEM: Collects log data from network devices and servers.
     - Agent-based SIEM: Collects log data from agents installed on network devices and servers.
+
+## Chapter 19 Legal and Ethical Aspects
+
+## Cybercrime
+- Cybercrime is a crime that involves a computer and a network.
+- Cybercrime can be committed against an individual, a business, or a government.
+
+## Types of Cybercrime
+- Computer as a target
+    - Attacks on the confidentiality, integrity, and availability of data and systems.
+- Computer as a storage device
+    - Storing illegal content on a computer.
+- Computer as communication tool
+    - Using a computer to commit fraud, distribute illegal content, or conduct other illegal activities.
+
+## Working with Law Enforcement
+- Executive management and security professionals need to look upon law enforcement as a partner.
+
