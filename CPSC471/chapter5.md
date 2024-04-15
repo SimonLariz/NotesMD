@@ -49,3 +49,13 @@ Common intra-AS routing protocols:
 ## Software Defined Networking Control Plane
 - SDN: logically centralized control plane
 - SDN controller: computes routing tables, installs them in routers
+- Central controller allows for easier network management, faster network reconfiguration, and easier network troubleshooting
+- Allows for load balancing, traffic engineering, and easier network management
+
+## SDN: Select challenges
+- Hardening the control plane, dependable, reliable, performance-scalable control plane
+- Networks, protocols, and meeting mission specific requirements
+- Security, privacy, and trustworthiness
+
+## ICMP: Internet control message protocol
+- Used by hosts and routers to communicate network-level information
