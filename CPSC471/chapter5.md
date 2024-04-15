@@ -14,3 +14,38 @@
 ## Software Defined Networking (SDN)
 - Remote controller computes, installs routing tables in routers
 - OpenFlow: Protocol for remote controllers to modify routing tables
+
+## Inter-AS routing: Routing within an Autonomous System (AS)
+Common intra-AS routing protocols:
+- RIP (Routing Information Protocol)
+- EIGRP (Enhanced Interior Gateway Routing Protocol)
+- OSPF (Open Shortest Path First)
+
+## OSPF (Open Shortest Path First)
+- "Open": publicly available
+- Classic link state
+    - each router floods link state information to all other routers in the entire AS
+    - multiple link costs metrics (delay, bandwidth, etc.)
+    - OSPF path computation: Dijkstra's algorithm,
+- Security: all OSPF messages authenticated (to prevent malicious intrusion)
+
+## Hierarchical OSPF
+- Two-level hierarchy: local area and backbone
+    - Link-state advertisements only in area
+    - Each node has detailed area topology; only know direction (shortest path) to nets in other areas
+
+## Internet inter-AS routing: BGP (Border Gateway Protocol)
+- BGP: the de facto inter-domain routing protocol
+- Allows subnet to advertise its existence to rest of the Internet
+- Allows subnet to learn paths to other subnets
+
+## Path attributes and BGP routes 
+- BGP advertised route: prefix + attributes
+    - prefix: destination being advertised
+    - two important attributes: AS-PATH, NEXT-HOP
+- AS-PATH: list of ASes through which prefix advertisement has passed
+- NEXT-HOP: the next router to send packet to, on way to advertised prefix
+
+## Software Defined Networking Control Plane
+- SDN: logically centralized control plane
+- SDN controller: computes routing tables, installs them in routers
