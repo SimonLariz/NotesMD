@@ -59,3 +59,9 @@ Common intra-AS routing protocols:
 
 ## ICMP: Internet control message protocol
 - Used by hosts and routers to communicate network-level information
+
+Bellman ford equation has value for ________ routing
+- Distance vector
+
+Dijkstra's algorithm has value for ________ routing
+-
