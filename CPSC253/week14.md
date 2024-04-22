@@ -47,3 +47,6 @@ D = E^-1 mod Q = 7^-1 mod 880 = 503
 - Constant Exponentiation Time: Ensure that the time taken to perform cryptographic operations is constant, regardless of the input.
 - Random Delay: Introduce random delays in the cryptographic operations to prevent attackers from inferring information based on timing.
 - Blinding - Multiply the ciphertext by a random value before decryption and divide by the same value after decryption to prevent timing attacks.
+
+## Diffie-Hellman Key Exchange
+- Diffie-Hellman key exchange is a method for two parties to agree on a shared secret over an insecure channel.
