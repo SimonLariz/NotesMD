@@ -59,4 +59,4 @@ async def send_email_route(email: str, message: str):
 - So, Broker which helps services to do inter-communication via messaging is Message Broker.
 
 
-
+    
