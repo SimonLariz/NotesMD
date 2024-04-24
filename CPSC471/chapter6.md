@@ -25,3 +25,25 @@ Half-duplex and full-duplex
 
 ## Link Layer: Implementation
 Link layer implemented in "adaptor" (aka network interface card)
+
+## Cable access network
+- DOCSIS: data over cable service interface specification
+    - FDM over upstream and downstream frequency bands
+    - TDM upstream
+
+## MAC (Media Access Control) Addresses
+32-bit IP address: network-layer address
+MAC (or LAN or physical or Ethernet) address: used to get frame from one interface to another physically-connected interface (same network)
+
+## ARP (Address Resolution Protocol)
+ARP table: each IP node (host, router) on LAN has table
+- IP/MAC address mappings for some LAN nodes
+- TTL (Time To Live): time after which address mapping will be forgotten (typically 20 min)
+
+## Routing to another subnet: addressing
+Frame sent from one host to another, same LAN (same subnet)
+- MAC address of destination
+Frame sent from one host to another, different LAN (different subnet)
+- MAC address of router interface
+- Router's IP address in frame
+
