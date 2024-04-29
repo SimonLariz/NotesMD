@@ -47,3 +47,33 @@ Frame sent from one host to another, different LAN (different subnet)
 - MAC address of router interface
 - Router's IP address in frame
 
+## Summary of MAC protocols
+- Channel Partitioning
+    - Divide channel into smaller "pieces" (time slots, frequency, code)
+    - Allocate piece to node for exclusive use
+- Random Access
+    - Channel not divided, allow collisions
+    - "recover" from collisions
+- Taking turns
+    - Nodes take turns, but nodes with more to send can take longer turns
+
+## MAC Addresses
+- 32 bit IP address
+    - network-layer address
+- MAC (or LAN or physical or Ethernet) address
+    - used to get frame from one interface to another physically-connected interface (same network)
+    - 48 bit MAC address burned in NIC ROM
+    - MAC address allocation administered by IEEE
+        - Manufacturer buys portion of MAC address space (to assure uniqueness)
+        - MAC address prefix (OUI) burned in NIC ROM
+
+## ARP (Address Resolution Protocol) Table
+Each IP node (host, router) on LAN has table
+- IP/MAC address mappings for some LAN nodes
+
+## ARP Protocol in action
+- A wants to send datagram to B, and B's MAC address not in A's ARP table
+- A broadcasts ARP query packet, containing B's IP address
+- B receives ARP packet, replies to A with its (B's) MAC address
+- A caches IP/MAC address pair in its ARP table until information becomes old (soft state)
+- Soft state: information times out after some time (few minutes)
