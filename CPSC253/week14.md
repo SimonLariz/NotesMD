@@ -50,3 +50,13 @@ D = E^-1 mod Q = 7^-1 mod 880 = 503
 
 ## Diffie-Hellman Key Exchange
 - Diffie-Hellman key exchange is a method for two parties to agree on a shared secret over an insecure channel.
+
+## MIME and S/MIME
+- MIME (Multipurpose Internet Mail Extensions) is a standard that extends the format of email messages to support text in character sets other than ASCII, as well as attachments of audio, video, images, and application programs.
+- S/MIME (Secure/Multipurpose Internet Mail Extensions) is a standard for public key encryption and signing of MIME data.
+
+## Enveloped Data
+- Enveloped data is data that is encrypted using a symmetric key and then encrypted using the recipient's public key.
+
+## Heartbleed Bug
+- The Heartbleed bug is a security vulnerability in the OpenSSL cryptography library that allows an attacker to read the memory of a server or client, potentially exposing sensitive information such as private keys, usernames, passwords, and other data.
