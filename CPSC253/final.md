@@ -124,7 +124,7 @@ Example:
         - Step 2: Compute n = p * q
         - Step 3: Compute φ(n) = (p-1) * (q-1)
         - Step 4: Choose an encryption key, e, such that 1 < e < φ(n) and gcd(e, φ(n)) = 1
-        - Step 5: Compute the decryption key, d, such that d * e ≡ 1 (mod φ(n))
+        - Step 5: Compute the decryption key, d, such that d * e (mod φ(n)) = 1
         - Step 6: The public key is (n, e) and the private key is (n, d)
         - Step 7: To encrypt a message m, compute c = m^e mod n
         - Step 8: To decrypt a ciphertext c, compute m = c^d mod n
@@ -156,6 +156,7 @@ Example:
         - Bob chooses b = 15 and computes B = 5^15 mod 23 = 19
         - Alice computes the shared secret, s, as s = 19^6 mod 23 = 2
         - Bob computes the shared secret, s, as s = 8^15 mod 23 = 2
+        
 
 ## Week - 14
 -SMTP, MIME, S/MIME
