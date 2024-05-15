@@ -10,10 +10,13 @@ Reliability theory:
 Four forms of boundary value testing:
     - *Normal boundary value testing*: Test cases are designed to test the normal operation of the software.
         - Example: If the software is designed to accept a number between 1 and 100, then the test cases would be 1, 2, 99, 100.
+        
     - *Robust normal boundary value testing*: Test cases are designed to test the software's ability to handle abnormal input.
         - Example: If the software is designed to accept a number between 1 and 100, then the test cases would be 0, 101.
+        
     - *Worst-case boundary value testing*: Test cases are designed to test the software's ability to handle the worst possible input.
         - Example: If the software is designed to accept a number between 1 and 100, then the test cases would be -1, 0, 50, 100, 101.
+        
     - *Robust worst-case value testing*: Test cases are designed to test the software's ability to handle the worst possible abnormal input.
         - Test all values around the boundary values.
 
