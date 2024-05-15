@@ -118,8 +118,44 @@ Example:
             - MD5
             - SHA-1
             - SHA-256
-- RSA - Problem [WORK!]
-- Diffie-Hellman Problem [WORK!]
+- RSA
+    - How to compute RSA
+        - Step 1: Generate two large prime numbers, p and q
+        - Step 2: Compute n = p * q
+        - Step 3: Compute φ(n) = (p-1) * (q-1)
+        - Step 4: Choose an encryption key, e, such that 1 < e < φ(n) and gcd(e, φ(n)) = 1
+        - Step 5: Compute the decryption key, d, such that d * e ≡ 1 (mod φ(n))
+        - Step 6: The public key is (n, e) and the private key is (n, d)
+        - Step 7: To encrypt a message m, compute c = m^e mod n
+        - Step 8: To decrypt a ciphertext c, compute m = c^d mod n
+    
+    Example:
+        - p = 7 and q = 11
+        - n = p * q = 7 * 11 = 77
+        - φ(n) = (p-1) * (q-1) = 6 * 10 = 60
+        - e = 13
+        - d = 37
+        - Public key: (77, 13)
+        - Private key: (77, 37)
+        - Encryption: c = 5^13 mod 77 = 5
+        - Decryption: m = 5^37 mod 77 = 5
+
+- Diffie-Hellman Problem
+    - How to compute Diffie-Hellman
+        - Step 1: Choose a prime number, p, and a primitive root modulo p, g
+        - Step 2: Alice chooses a secret key, a, and computes A = g^a mod p
+        - Step 3: Bob chooses a secret key, b, and computes B = g^b mod p
+        - Step 4: Alice and Bob exchange A and B
+        - Step 5: Alice computes the shared secret, s, as s = B^a mod p
+        - Step 6: Bob computes the shared secret, s, as s = A^b mod p
+        - Step 7: Alice and Bob now have a shared secret key, s
+    
+    Example:
+        - p = 23 and g = 5
+        - Alice chooses a = 6 and computes A = 5^6 mod 23 = 8
+        - Bob chooses b = 15 and computes B = 5^15 mod 23 = 19
+        - Alice computes the shared secret, s, as s = 19^6 mod 23 = 2
+        - Bob computes the shared secret, s, as s = 8^15 mod 23 = 2
 
 ## Week - 14
 -SMTP, MIME, S/MIME
