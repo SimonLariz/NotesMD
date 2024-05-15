@@ -8,6 +8,7 @@ Reliability theory:
     - Failures are rarely the result of the simultaneous failure of multiple components.
 
 Four forms of boundary value testing:
+
     - *Normal boundary value testing*: Test cases are designed to test the normal operation of the software.
         - Example: If the software is designed to accept a number between 1 and 100, then the test cases would be 1, 2, 99, 100.
         
